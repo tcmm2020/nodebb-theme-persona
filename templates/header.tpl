@@ -5,6 +5,7 @@
 	{{{each metaTags}}}{function.buildMetaTag}{{{end}}}
 	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client<!-- IF bootswatchSkin -->-{bootswatchSkin}<!-- END -->.css?{config.cache-buster}" />
 	{{{each linkTags}}}{function.buildLinkTag}{{{end}}}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 	<script>
 		var config = JSON.parse('{{configJSON}}');
