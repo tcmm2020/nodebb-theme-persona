@@ -1,9 +1,18 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
-	<!-- IF allowLocalLogin -->
-	<div class="<!-- IF alternate_logins -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF alternate_logins -->">
+	<div class="col-md-6">
 		<div class="login-block">
+			<h4>[[login:user-login]]</h4>
+			<div class="col-lg-offset-2 col-lg-8">
+				<button class="btn btn-primary btn-lg btn-block" id="sso-login" type="submit">[[global:login]]</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="alt-login-block">
+			<h4>[[login:admin-login]]</h4>
 			<div class="alert alert-danger" id="login-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
 				<strong>[[login:failed_login_attempt]]</strong>
@@ -46,30 +55,9 @@
 				<div class="form-group">
 					<div class="col-lg-offset-2 col-lg-10">
 						<button class="btn btn-primary btn-lg btn-block" id="login" type="submit">[[global:login]]</button>
-						<!-- IF allowRegistration -->
-						<span>[[login:dont_have_account]] <a href="{config.relative_path}/register">[[register:register]]</a></span>
-						<!-- ENDIF allowRegistration -->
-						<!-- IF allowPasswordReset -->
-						&nbsp; <a id="reset-link" href="{config.relative_path}/reset">[[login:forgot_password]]</a>
-						<!-- ENDIF allowPasswordReset -->
 					</div>
 				</div>
 			</form>
-
 		</div>
 	</div>
-	<!-- ENDIF allowLocalLogin -->
-
-	<!-- IF alternate_logins -->
-	<div class="<!-- IF allowLocalLogin -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF allowLocalLogin -->">
-		<div class="alt-login-block">
-			<h4>[[login:alternative_logins]]</h4>
-			<ul class="alt-logins">
-				{{{each authentication}}}
-				<li class="{authentication.name}"><a rel="nofollow noopener noreferrer" target="_top" href="{config.relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-3x"></i></a></li>
-				{{{end}}}
-			</ul>
-		</div>
-	</div>
-	<!-- ENDIF alternate_logins -->
 </div>
