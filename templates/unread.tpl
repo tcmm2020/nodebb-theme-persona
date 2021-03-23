@@ -6,13 +6,6 @@
 </div>
 <div class="unread">
 	<div class="topic-list-header btn-toolbar">
-		<div class="pull-left">
-			<!-- IMPORT partials/buttons/newTopic.tpl -->
-			<a href="{config.relative_path}/{selectedFilter.url}{querystring}" class="inline-block">
-				<div class="alert alert-warning hide" id="new-topics-alert"></div>
-			</a>
-		</div>
-
 		<div class="btn-group pull-right">
 		<!-- IMPORT partials/category/tools.tpl -->
 		</div>
