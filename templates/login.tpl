@@ -4,6 +4,13 @@
 	<div class="col-md-6">
 		<div class="login-block">
 			<h4>[[login:user-login]]</h4>
+
+			<div class="alert alert-danger" id="sso-login-error-notify" <!-- IF ssoError -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF ssoError -->>
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>[[login:failed_login_attempt]]</strong>
+				<p>{ssoError}</p>
+			</div>
+
 			<div class="col-lg-offset-2 col-lg-8">
 				<button class="btn btn-primary btn-lg btn-block" id="sso-login" type="submit">[[global:login]]</button>
 			</div>
