@@ -31,13 +31,6 @@
 </li>
 <!-- ENDIF posts.display_move_tools -->
 
-<!-- IF posts.display_change_owner_tools -->
-<li>
-	<a component="post/change-owner" role="menuitem" tabindex="-1" href="#">
-		<span class="menu-icon"><i class="fa fa-fw fa-user"></i></span> [[topic:change-owner]]
-	</a>
-</li>
-<!-- ENDIF posts.display_change_owner_tools -->
 
 <!-- IF posts.ip -->
 <li>
@@ -72,19 +65,6 @@
 	</li>
 	<!-- END -->
 
-	<!-- IF config.loggedIn -->
-	<li>
-		<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
-			<span class="menu-icon">
-				<i component="post/bookmark/on" class="fa fa-fw fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
-				<i component="post/bookmark/off" class="fa fa-fw fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
-			</span>
-			<span class="bookmark-text">[[topic:bookmark]]</span>
-			<span component="post/bookmark-count" class="bookmarkCount badge" data-bookmarks="{posts.bookmarks}">{posts.bookmarks}</span>&nbsp;
-		</a>
-	</li>
-	<!-- ENDIF config.loggedIn -->
-
 	<!-- IF postSharing.length -->
 	<!-- IF config.loggedIn --><li class="divider"></li><!-- ENDIF config.loggedIn -->
 	<li class="dropdown-header">[[topic:share_this_post]]</li>
@@ -95,23 +75,3 @@
 		</li>
 	{{{end}}}
 <!-- ENDIF !posts.deleted -->
-
-<!-- IF posts.display_flag_tools -->
-<li class="divider"></li>
-{{{ if !posts.flags.flagged }}}
-<li><a component="post/flag" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:flag-post]]</a></li>
-{{{ if (!posts.selfPost && posts.uid) }}}
-<li><a component="post/flagUser" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:flag-user]]</a></li>
-{{{ end }}}
-{{{ else }}}
-<li class="disabled text-muted"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:already-flagged]]</li>
-{{{ end }}}
-<!-- ENDIF posts.display_flag_tools -->
-<!-- IF posts.display_moderator_tools -->
-{{{ if posts.flags.exists }}}
-<li><a role="menuitem" tabindex="-1" href="{config.relative_path}/flags/{posts.flags.flagId}"><i class="fa fa-fw fa-exclamation-circle"></i> [[topic:view-flag-report]]</a></li>
-{{{ if (posts.flags.state == "open") }}}
-<li><a component="post/flagResolve" data-flagId="{posts.flags.flagId}" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-check"></i> [[topic:resolve-flag]]</a></li>
-{{{ end }}}
-{{{ end }}}
-<!-- ENDIF posts.display_moderator_tools -->
