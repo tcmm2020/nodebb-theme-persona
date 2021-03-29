@@ -6,14 +6,6 @@
 </div>
 <div class="tag">
 	<div class="topic-list-header btn-toolbar">
-		<div class="pull-left">
-			<!-- IF loggedIn -->
-			<!-- IMPORT partials/buttons/newTopic.tpl -->
-			<!-- ELSE -->
-			<a component="category/post/guest" href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
-			<!-- ENDIF loggedIn -->
-		</div>
-
 		<div class="btn-group pull-right">
 		<!-- IMPORT partials/category/tools.tpl -->
 		</div>
