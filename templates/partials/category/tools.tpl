@@ -36,26 +36,6 @@
 		<li class="divider"></li>
 
 		<li>
-			<a component="topic/move" href="#">
-				<i class="fa fa-fw fa-arrows"></i> [[topic:thread_tools.move]]
-			</a>
-		</li>
-		{{{if template.category}}}
-		<li>
-			<a component="topic/move-all" href="#">
-				<i class="fa fa-fw fa-arrows"></i> [[topic:thread_tools.move_all]]
-			</a>
-		</li>
-		{{{end}}}
-		<li>
-			<a component="topic/merge" href="#">
-				<i class="fa fa-fw fa-code-fork"></i> [[topic:thread_tools.merge]]
-			</a>
-		</li>
-
-		<li class="divider"></li>
-
-		<li>
 			<a component="topic/delete" href="#">
 				<i class="fa fa-fw fa-trash-o"></i> [[topic:thread_tools.delete]]
 			</a>
