@@ -122,11 +122,6 @@
 									<i class="fa fa-fw fa-list-alt"></i> <span>[[pages:post-queue]]</span>
 								</a>
 							</li>
-							<li>
-								<a href="{relative_path}/ip-blacklist">
-									<i class="fa fa-fw fa-ban"></i> <span>[[pages:ip-blacklist]]</span>
-								</a>
-							</li>
 							<!-- ENDIF showModMenu -->
 							<li role="presentation" class="divider"></li>
 							<li component="user/logout">
