@@ -17,6 +17,4 @@
 			<!-- ENDIF ../descriptionParsed -->
 		</div>
 	</div>
-
-	<!-- IMPORT partials/category/watch.tpl -->
 </li>

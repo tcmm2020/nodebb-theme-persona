@@ -9,8 +9,6 @@
 	</button>
 	<!-- ENDIF loggedIn -->
 
-	<!-- IMPORT partials/topic/watch.tpl -->
-
 	<!-- IMPORT partials/topic/sort.tpl -->
 
 	<div class="inline-block">
