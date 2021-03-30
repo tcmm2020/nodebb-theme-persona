@@ -9,8 +9,6 @@
 		<div class="btn-group pull-right">
 		<!-- IMPORT partials/category/tools.tpl -->
 		</div>
-
-		<!-- IMPORT partials/category-filter-right.tpl -->
 	</div>
 
 	<!-- IF !topics.length -->

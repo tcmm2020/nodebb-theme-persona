@@ -21,10 +21,12 @@
 				<div class="alert alert-warning hide" id="new-topics-alert"></div>
 			</a>
 
+			<!-- IF canPost -->
 			<span class="pull-right" component="category/controls">
 				<!-- IMPORT partials/category/sort.tpl -->
 				<!-- IMPORT partials/category/tools.tpl -->
 			</span>
+			<!-- ENDIF canPost -->
 		</div>
 
 		<!-- IF !topics.length -->
