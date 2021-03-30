@@ -45,11 +45,6 @@
 				<i class="fa fa-fw fa-history"></i> [[topic:thread_tools.restore]]
 			</a>
 		</li>
-		<li>
-			<a component="topic/purge" href="#" class="hidden">
-				<i class="fa fa-fw fa-eraser"></i> [[topic:thread_tools.purge]]
-			</a>
-		</li>
 
 		{{{each thread_tools}}}
 		<li>
