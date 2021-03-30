@@ -9,7 +9,7 @@
     <li component="category/no-matches" role="presentation" class="category hidden">
         <a role="menu-item">[[search:no-matches]]</a>
     </li>
-    {{{each categoryItems}}}
+    {{{each categories}}}
     <li role="presentation" class="category {{{ if ../disabledClass }}}disabled {{{ end }}}" data-cid="{../cid}" data-name="{../name}" data-parent-cid="{../parentCid}">
         <a role="menu-item">{../level}<span component="category-markup" style="{{{ if ../match }}}font-weight: bold;{{{end}}}">{{{ if ./icon }}}<span class="fa-stack" style="{function.generateCategoryBackground}"><i style="color: {../color};" class="fa fa-stack-1x fa-fw {../icon}"></i></span>{{{ end }}} {../name}</span></a>
     </li>
