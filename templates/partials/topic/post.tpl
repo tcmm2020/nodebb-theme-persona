@@ -82,7 +82,6 @@
 			<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
 		</span>
 
-		<!-- IF !reputation:disabled -->
 		<span class="votes">
 			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
 				<i class="fa fa-thumbs-up"></i>
@@ -96,7 +95,6 @@
 			</a>
 			<!-- ENDIF !downvote:disabled -->
 		</span>
-		<!-- ENDIF !reputation:disabled -->
 
 		<!-- IMPORT partials/topic/post-menu.tpl -->
 	</small>
