@@ -28,8 +28,8 @@
 						<div class="col-md-2">
 							<label>[[search:match-words]]</label>
 							<select id="match-words-filter" class="form-control">
-								<option value="all">[[search:all]]</option>
 								<option value="any">[[search:any]]</option>
+								<option value="all">[[search:all]]</option>
 							</select>
 						</div>
 						<div class="col-md-2">
