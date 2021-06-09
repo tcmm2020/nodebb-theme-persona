@@ -60,7 +60,7 @@
 										<div class="row">
 											<div class="col-md-6">
 												<label>[[search:posted-by]]</label>
-												<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
+												<input type="text" class="form-control" id="posted-by-user">
 											</div>
 											<div class="col-md-6">
 												<label>[[search:has-tags]]</label>
