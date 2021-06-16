@@ -179,7 +179,7 @@
 							<!-- ENDIF navigation.iconClass -->
 
 							<!-- IF navigation.text -->
-							<span class="{navigation.textClass}">{navigation.text}</span>
+							<span>{navigation.text}</span>
 							<!-- ENDIF navigation.text -->
 						</a>
 					</li>
