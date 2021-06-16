@@ -1,6 +1,7 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
+	<!-- IF allowLoginWithInServiceSSO -->
 	<div class="col-md-6">
 		<div class="login-block">
 			<h4>[[login:user-login]]</h4>
@@ -16,7 +17,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- ENDIF allowLoginWithInServiceSSO -->
 	<div class="col-md-6">
 		<div class="alt-login-block">
 			<h4>[[login:admin-login]]</h4>
