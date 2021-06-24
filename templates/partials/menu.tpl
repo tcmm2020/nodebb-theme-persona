@@ -69,6 +69,7 @@
 						<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
 							{buildAvatar(user, "md", true)}
 							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
+							<span>[[global:header.profile]]</span>
 						</label>
 						<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
 						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
@@ -111,6 +112,12 @@
 						</ul>
 					</li>
 
+					<li component="user/logout">
+						<a class="navigation-link" href="">
+							<i class="fa fa-fw fa-sign-out"></i>
+							<span> [[global:logout]]</span>
+						</a>
+					</li>
 				</ul>
 				<!-- ELSE -->
 				<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
