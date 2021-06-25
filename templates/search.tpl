@@ -16,7 +16,7 @@
 								<option value="titlesposts">[[search:titles-posts]]</option>
 								<option value="titles">[[search:titles]]</option>
 								<option value="posts">[[global:posts]]</option>
-								<option value="categories">[[global:header.categories]]</option>
+								<option value="categories">[[search:categories]]</option>
 								{{{if privileges.search:users}}}
 								<option value="users">[[global:users]]</option>
 								{{{end}}}
