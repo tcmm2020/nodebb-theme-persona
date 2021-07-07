@@ -18,7 +18,7 @@
 								<option value="posts">[[global:posts]]</option>
 								<option value="categories">[[search:categories]]</option>
 								{{{if privileges.search:users}}}
-								<option value="users">[[global:users]]</option>
+								<option value="users">[[search:users]]</option>
 								{{{end}}}
 								{{{if privileges.search:tags}}}
 								<option value="tags">[[tags:tags]]</option>
